@@ -12,7 +12,9 @@ namespace: ${OPENCLAW_NAMESPACE}
 resources:
   - ../../base
 patches:
-  - path: secrets-patch.yaml
+  # One Secret per file — Kustomize v5 cannot parse multi-document patch YAML
+  - path: secrets-openclaw-patch.yaml
+  - path: openclaw-oauth-config-patch.yaml
   - path: config-patch.yaml
   - path: deployment-patch.yaml
   # Auto-generate route hostname

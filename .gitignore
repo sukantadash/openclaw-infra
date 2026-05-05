@@ -58,7 +58,8 @@ manifests/*
 !manifests/kagenti-namespace-enrollment/kagenti-namespace-enrollment.yaml.envsubst
 # Agent overlays
 agents/openclaw/overlays/openshift/kustomization.yaml
-agents/openclaw/overlays/openshift/secrets-patch.yaml
+agents/openclaw/overlays/openshift/secrets-openclaw-patch.yaml
+agents/openclaw/overlays/openshift/openclaw-oauth-config-patch.yaml
 agents/openclaw/overlays/openshift/config-patch.yaml
 agents/openclaw/overlays/openshift/deployment-patch.yaml
 agents/openclaw/overlays/k8s/kustomization.yaml
